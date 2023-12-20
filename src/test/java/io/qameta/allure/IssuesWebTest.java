@@ -50,6 +50,7 @@ class IssuesWebTest {
     void shouldAddLabelToIssue() {
         steps.openIssuesPage(OWNER, REPO);
         steps.createIssueWithTitle(ISSUE_TITLE);
+        steps.createIssueWithTitle(ISSUE_TITLE);
         steps.shouldSeeIssueWithTitle(ISSUE_TITLE);
     }
 
