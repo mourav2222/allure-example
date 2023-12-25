@@ -36,4 +36,28 @@ class AuthTest {
 
         });
     }
+
+    @Test
+    @AllureId("2707")
+    @DisplayName("Authentication via Google")
+    @Tags({@Tag("smoke"), @Tag("web")})
+    void testGoogleAuth() {
+        step("Open main website");
+        step("Select the authentication via Google", () -> {
+            step("Press a button Login");
+            step("Press a button Google");
+        });
+        step("Authenticate as user testuser", () -> {
+            step("Input the mail testuser@gmail.com");
+            step("Input the password 12341234");
+            step("Press the button Login in");
+        });
+        step("Check the authentication as user testuser", () -> {
+            step("Go back to main page");
+            step("Check user login must be testuser");
+            step("The user name must be Test Name");
+        });
+    }
+
+
 }
