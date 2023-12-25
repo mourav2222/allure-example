@@ -11,6 +11,7 @@ import static io.qameta.allure.Allure.*;
 @Feature("Auth")
 @Story("External Auth")
 @Owner("admin")
+@Microservice("auth")
 class AuthTest {
 
     @ParameterizedTest()

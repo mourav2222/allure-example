@@ -8,6 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 @Layer("rest")
 @Owner("baev")
 @Feature("Issues")
+@Microservice("issues")
 public class IssuesRestTest {
 
     private static final String OWNER = "allure-framework";

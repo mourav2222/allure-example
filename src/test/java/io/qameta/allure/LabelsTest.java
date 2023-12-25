@@ -9,6 +9,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Labels")
 @Story("External Systems")
 @Owner("admin")
+@Microservice("labels")
 class LabelsTest {
 
     @Test

@@ -9,6 +9,7 @@ import static io.qameta.allure.Allure.step;
 @Feature("Milestones")
 @Story("Stages")
 @Owner("admin")
+@Microservice("milestones")
 class MilestonesTest {
 
     @Test
