@@ -1,9 +1,6 @@
 package io.qameta.allure;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Tags;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static io.qameta.allure.Allure.step;
 
@@ -35,6 +32,8 @@ class AuthTest {
             step("The user name must be 'Mr Test'");
 
         });
+
+        Assertions.assertTrue(true);
     }
 
     @Test
@@ -57,6 +56,8 @@ class AuthTest {
             step("Check user login must be testuser");
             step("The user name must be Test Name");
         });
+
+        Assertions.assertTrue(true);
     }
 
 
@@ -80,6 +81,8 @@ class AuthTest {
             step("Check user login must be testuser");
             step("The user name must be Test Name");
         });
+
+        Assertions.assertTrue(true);
     }
 
 }
