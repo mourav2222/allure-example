@@ -16,9 +16,9 @@ class AuthTest {
     @ParameterizedTest(name = "Authantication via external system")
     @Tags({@Tag("critical"), @Tag("web")})
     @CsvSource({
-            "2716, GitHub",
-            "2717, Azure",
-            "2707, Google"
+            "2740, GitHub",
+            "2741, Azure",
+            "2742, Google"
     })
     void testAllAuths(String allureID, String typeAuth) {
         label("AS_ID", allureID);
