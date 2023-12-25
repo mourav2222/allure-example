@@ -1,5 +1,6 @@
 package io.qameta.allure;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -50,7 +51,10 @@ class AuthTest {
     @DisplayName("Authentication via GitHub")
     @Tags({@Tag("critical"), @Tag("web")})
     void testGitHub() {
-        step("Open main website");
+
+
+        boolean assertCheck = "False".equalsIgnoreCase(RandomStringUtils.randomAlphabetic(5));
+        step("Open main website (CHANGED)");
         step("Select the authentication via GitHub", () -> {
             step("Press a button Login", () -> {
 
@@ -69,7 +73,7 @@ class AuthTest {
 
         });
 
-        Assertions.assertTrue(true);
+        Assertions.assertTrue(assertCheck);
     }
 
     @Test
