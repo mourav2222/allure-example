@@ -32,6 +32,7 @@ class AuthTest {
         step("Check the authentication as user 'testuser'", () -> {
             step("Go back to main page");
             step("Check user login must be 'testuser'");
+            step("The user name must be 'Mr Test'");
 
         });
     }
