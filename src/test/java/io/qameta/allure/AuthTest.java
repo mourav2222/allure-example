@@ -13,13 +13,14 @@ import static io.qameta.allure.Allure.*;
 @Owner("admin")
 class AuthTest {
 
-    @ParameterizedTest(name = "Authantication via external system")
+    @ParameterizedTest(name = "Authantication via external system (name)")
     @Tags({@Tag("critical"), @Tag("web")})
     @CsvSource({
             "2740, GitHub",
             "2741, Azure",
             "2742, Google"
     })
+    @DisplayName("Authantication via external system")
     void testAllAuths(String allureID, String typeAuth) {
         label("AS_ID", allureID);
         parameter("Type", typeAuth);
