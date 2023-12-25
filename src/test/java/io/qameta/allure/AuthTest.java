@@ -13,7 +13,7 @@ import static io.qameta.allure.Allure.step;
 class AuthTest {
 
     @Test
-    @AllureId("2709")
+    @AllureId("2710")
     @DisplayName("Authentication via GitHub")
     @Tags({@Tag("critical"), @Tag("web")})
     void testGitHub() {
