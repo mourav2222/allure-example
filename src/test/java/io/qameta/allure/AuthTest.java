@@ -2,9 +2,7 @@ package io.qameta.allure;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import static io.qameta.allure.Allure.*;
 
@@ -13,7 +11,7 @@ import static io.qameta.allure.Allure.*;
 @Owner("admin")
 class AuthTest {
 
-    @ParameterizedTest(name = "Authantication via external system (name)")
+    @ParameterizedTest()
     @Tags({@Tag("critical"), @Tag("web")})
     @CsvSource({
             "2740, GitHub",
