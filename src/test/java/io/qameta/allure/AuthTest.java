@@ -182,4 +182,72 @@ class AuthTest {
             });
         });
     }
+
+    @Test
+    void testBBB() {
+
+    }
+
+    @AllureId("2806")
+    @Owner("admin")
+    // "msrv": [auth]
+    // "suite": [io.qameta.allure.AuthTest]
+    // "framework": [junit-platform]
+    @Features({@Feature("Auth")})
+    @Stories({@Story("External Auth")})
+    @Test
+    @DisplayName("Authentication via Azure(clone)")
+    @Tags({@Tag("web"), @Tag("smoke")})
+    void testAuthenticationViaAzureclone() {
+
+        step("Open main website", () -> {
+
+            boolean b1 = Boolean.parseBoolean("false");
+
+        });
+
+        step("Not forget to set cookie seting in the new feature", () -> {
+
+            boolean b2 = Boolean.parseBoolean("false");
+
+            step("Feature is yet in the development", () -> {
+                boolean b3 = Boolean.parseBoolean("false");
+            });
+        });
+
+        step("Select the authentication via Azure", () -> {
+
+            step("Press a button Login", () -> {
+                boolean b4 = Boolean.parseBoolean("false");
+            });
+
+            step("Press a button Azure", () -> {
+                boolean b5 = Boolean.parseBoolean("false");
+            });
+        });
+
+        step("Authenticate as user testuser", () -> {
+
+            step("Input the mail testuser@microsoft.com", () -> {
+            });
+
+            step("Input the password 12341234", () -> {
+            });
+
+            step("Press the button Login in", () -> {
+            });
+        });
+
+        step("Check the authentication as user testuser", () -> {
+
+            step("Go back to main page", () -> {
+            });
+
+            step("Check user login must be testuser", () -> {
+            });
+
+            step("The user name must be Test Name", () -> {
+            });
+        });
+    }
 }
