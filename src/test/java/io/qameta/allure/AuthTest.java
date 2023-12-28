@@ -134,7 +134,7 @@ class AuthTest {
     }
 
 
-    @AllureId("2773")
+    //@AllureId("2773")
     @Owner("admin")
     // "msrv": [auth]
     // "suite": [io.qameta.allure.AuthTest]
