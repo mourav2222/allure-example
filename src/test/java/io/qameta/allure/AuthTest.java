@@ -139,8 +139,8 @@ class AuthTest {
     // "msrv": [auth]
     // "suite": [io.qameta.allure.AuthTest]
     // "framework": [junit-platform]
-    @Features({@Feature("Auth")})
-    @Stories({@Story("External Auth")})
+    //@Features({@Feature("Auth")})
+    //@Stories({@Story("External Auth")})
     @Test
     @DisplayName("Authentication via GitHub Clone222")
     @Tags({@Tag("critical"), @Tag("web")})
