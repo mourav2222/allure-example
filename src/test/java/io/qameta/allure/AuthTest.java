@@ -142,7 +142,7 @@ class AuthTest {
     @Features({@Feature("Auth")})
     @Stories({@Story("External Auth")})
     @Test
-    @DisplayName("Authentication via GitHub Clone")
+    @DisplayName("Authentication via GitHub Clone222")
     @Tags({@Tag("critical"), @Tag("web")})
     void testAuthenticationViaGithubClone() {
 
