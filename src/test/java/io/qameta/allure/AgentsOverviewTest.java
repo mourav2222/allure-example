@@ -8,6 +8,11 @@ import org.junit.jupiter.api.Test;
 class AgentsOverviewTest {
 
     @Test
+    protected void testAAA() {
+
+    }
+
+    @Test
     void agentsFilterByAgentTest() {
 
     }
@@ -34,6 +39,44 @@ class AgentsOverviewTest {
 
             Allure.step("", () -> {
             });
+        });
+    }
+
+    @AllureId("2842")
+    @Owner("admin")
+    // "msrv": [mounth]
+    @Microservice("mounth")
+    @Test
+    @DisplayName("<2> Manual Test - Changed")
+    @Tags({@Tag("januar"), @Tag("critical"), @Tag("import")})
+    void test2ManualTest() {
+
+        Allure.step("Step 1", () -> {
+            Allure.step("Step 11", () -> {
+            });
+        });
+
+        Allure.step("Step 2", () -> {
+            Allure.step("Step 22", () -> {
+            });
+        });
+
+        Allure.step("Step 3", () -> {
+
+            Allure.step("Step 31", () -> {
+            });
+
+            Allure.step("Step 32", () -> {
+            });
+
+            Allure.step("Step 33", () -> {
+            });
+        });
+
+        Allure.step("Step 4", () -> {
+        });
+
+        Allure.step("Step 5", () -> {
         });
     }
 }
