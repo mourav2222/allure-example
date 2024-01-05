@@ -5,16 +5,21 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
+@Feature("Agents")
+@Story("Filtering")
 class AgentsOverviewTest {
 
     @Test
-    protected void testAAA() {
-
-    }
-
-    @Test
+    @Tags({@Tag("regress")})
     void agentsFilterByAgentTest() {
+        Allure.step("Step 1  ", () -> {
+        });
 
+        Allure.step("Step 2", () -> {
+        });
+
+        Allure.step("Step 3", () -> {
+        });
     }
 
     @AllureId("2575")
