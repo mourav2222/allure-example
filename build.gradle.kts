@@ -54,4 +54,21 @@ dependencies {
     // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
     implementation("org.apache.commons:commons-lang3:3.14.0")
 
+    // https://mvnrepository.com/artifact/org.junit-pioneer/junit-pioneer
+    // testImplementation("org.junit-pioneer:junit-pioneer:2.2.0")
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    implementation("org.springframework:spring-core:2.5.6")
+
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    testImplementation("org.projectlombok:lombok:1.18.30")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
+
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+    testImplementation("org.slf4j:slf4j-simple:2.0.12")
+
+
+
+
 }

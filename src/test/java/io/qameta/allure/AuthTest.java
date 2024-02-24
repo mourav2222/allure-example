@@ -75,7 +75,7 @@ class AuthTest {
 
         });
 
-        Assertions.assertTrue(assertCheck);
+        Assertions.assertFalse(assertCheck);
     }
 
     @Test
@@ -204,6 +204,8 @@ class AuthTest {
 
             boolean b1 = Boolean.parseBoolean("false");
 
+            Allure.addAttachment("email", "testemail.com");
+
         });
 
         step("Not forget to set cookie seting in the new feature", () -> {
@@ -212,6 +214,9 @@ class AuthTest {
 
             step("Feature is yet in the development", () -> {
                 boolean b3 = Boolean.parseBoolean("false");
+
+                Allure.addAttachment("password", "1222222333");
+
             });
         });
 
